@@ -1,0 +1,40 @@
+{
+  "name": "apprenticeship-data-dashboard",
+  "version": "1.0.0",
+  "description": "A data dashboard for soil and weather data",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ./src/js/index.js",
+    "dev": "webpack serve --mode development",
+    "test": "jest",
+    "test:coverage": "npm run test -- --coverage",
+    "lint": "eslint ./ --ignore-path .gitignore",
+    "build": "webpack"
+  },
+  "author": "Angus Chang",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.0",
+    "babel-jest": "^26.2.2",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "html-webpack-plugin": "^5.3.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "chart.js": "^3.5.1",
+    "colors": "^1.4.0",
+    "dotenv-webpack": "^7.0.3",
+    "json-server": "^0.16.3"
+  }
+}

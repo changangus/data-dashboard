@@ -1,0 +1,16 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background: $body-background;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  color: $heading2-color;
+}
+
+tr {
+  border-top: 2px $body-background solid;
+}

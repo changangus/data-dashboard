@@ -1,0 +1,28 @@
+{
+  "stations": [
+      {
+          "CO": 0.573,
+          "NO2": 9.19,
+          "OZONE": 7.12,
+          "PM10": 40.513,
+          "PM25": 16.383,
+          "SO2": 1.52,
+          "city": "Mysore",
+          "countryCode": "IN",
+          "division": "Chamarajanagar",
+          "lat": 12.012764,
+          "lng": 76.989954,
+          "placeName": "Kempanapura",
+          "postalCode": "571115",
+          "state": "Karnataka",
+          "updatedAt": "2021-09-07T13:00:00.000Z",
+          "AQI": 60,
+          "aqiInfo": {
+              "pollutant": "PM2.5",
+              "concentration": 16.383,
+              "category": "Moderate"
+          }
+      }
+  ],
+  "location": "location"
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Dashboard</title>
+</head>
+<body>
+  <header class="header">
+    <h1>Data Dashboard</h1>
+    <form class="search-form">
+      <label for="search-bar" class="visually-hidden">Location Search Bar</label>
+      <input type="text" class="search-form__input" name="search-bar" placeholder="Type location and select from dropdown"/>
+    </form>
+  </header>
+  <main class="dashboard">
+    <section>
+      <h2><abbr title="Air Quality Index">AQI</abbr> Data</h2>
+      <div>
+        <canvas id="aqiChart"></canvas>
+      </div>
+    </section>
+    <section>
+      <h2>Soil Data</h2>
+      <div>
+        <canvas id="soilChart"></canvas>
+      </div>
+    </section>
+    <section>
+      <h2>Temperature Data (Farenheit)</h2>
+      <div>
+        <canvas id="tempChart"></canvas>
+    </div>
+    </section>
+    <section>
+      <h2>Humidity Data (Percentage)</h2>
+      <div>
+        <canvas id="humidityChart"></canvas>
+      </div>
+    </section>
+  </main>
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWdHSzR51TuYvPMaYhpSI0kfyHfC90Bgk&libraries=places&callback=initAutocomplete">
+  </script>
+</body>
+</html>

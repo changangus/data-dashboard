@@ -1,0 +1,77 @@
+
+.table {
+  width: 100%;
+  font-size: 1.125rem;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin-bottom: 0.312rem;
+  background: $table-background;
+  color: $table-font-color;
+
+
+
+  &__header {
+    border: none;
+    clip-path: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  &__data-cell {
+    border-bottom: 1px solid $body-background;
+    display: block;
+    font-size: 1rem;
+    text-align: right;
+    padding: 0.625rem;
+
+    &--label {
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+
+  }
+
+  @media(min-width: $breakpoint1) {
+    &__data-cell {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media(min-width: $breakpoint2) {
+    max-width: 85%;
+    
+    &__header {
+      clip-path: none;
+      height: auto;
+      width: auto;
+      overflow: visible;
+      position: static;
+      background-color: $table-header-background;
+
+      &--cell {
+        padding: 1rem;
+      }
+
+    } 
+
+    &__data-cell {
+      display: table-cell;
+
+      &:first-child {
+        text-align: left;
+        background: $location-td-background;
+      }
+
+      &--label {
+        display: none;
+        float: none;
+      } 
+    }
+  }
+}
